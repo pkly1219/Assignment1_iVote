@@ -2,16 +2,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Student {
-    private String studentID;
+    private String id;
     private List<Integer> answers; // Indices of chosen options
 
-    public Student(String studentID) {
-        this.studentID = studentID;
+    public Student(String id) {
+        this.id = id;
         this.answers = new ArrayList<>();
     }
 
-    public String getStudentID() {
-        return studentID;
+    public String getId() {
+        return id;
     }
 
     public List<Integer> getAnswers() {
