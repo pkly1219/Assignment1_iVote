@@ -2,26 +2,28 @@ import java.util.List;
 
 class Question
 {
-    private String questionText;
-    private List<String> options;
+    private String question;
+    private List<String> choice;
 
-    public Question(String questionText, List<String> options) {
-        this.questionText = questionText;
-        this.options = options;
+    private boolean multipleChoice;
+
+    public Question(String question, List<String> choice, boolean multipleChoice) {
+        this.question = question;
+        this.choice = choice;
+        this.multipleChoice = multipleChoice;
     }
 
-    public String getQuestionText() {
-        return questionText;
+    public String getQuestion() {
+        return question;
     }
 
-    public List<String> getOptions() {
-        return options;
+    public List<String> getChoice() {
+        return choice;
     }
 
-    public void displayQuestion() {
-        System.out.println(getQuestionText());
-        for (int i = 0; i < options.size(); i++) {
-            System.out.println((i + 1) + ". " + options.get(i));
-        }
+    public boolean isMultipleChoice() {
+        return multipleChoice;
     }
+
+
 }
