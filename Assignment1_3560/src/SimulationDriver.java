@@ -8,7 +8,9 @@ class SimulationDriver {
         VotingService votingService = new VotingService();
 
         //Create a list of single-choice and multiple-choice question
+        
         List<Question> questions = new ArrayList<>();
+        
         //Multiple-choice questions
         questions.add(new Question("What are your favorite places?",
                 Arrays.asList("A. New York", "B. San Jose", "C. Houston", "D. San Diego"), true));
@@ -33,6 +35,8 @@ class SimulationDriver {
 
             for (int i = 1; i <= numStudents; i++) {
                 Student student = new Student("Student" + i);
+
+                
 
                 // Simulate single-choice or multiple-choice answers
                 if (!question.isMultipleChoice()) {
