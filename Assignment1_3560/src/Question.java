@@ -13,13 +13,16 @@ class Question
         this.multipleChoice = multipleChoice;
     }
 
+    
     public String getQuestion() {
         return question;
     }
+    
 
     public List<String> getChoice() {
         return choice;
     }
+    
 
     public boolean isMultipleChoice() {
         return multipleChoice;
