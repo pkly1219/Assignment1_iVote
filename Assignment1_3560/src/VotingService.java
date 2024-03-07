@@ -14,13 +14,14 @@ class VotingService {
         }
     }
 
+    
     public void acceptSubmission(Student student) {
         List<Integer> answers = student.getAnswers();
         for (int answerIndex : answers) {
             answerCounts.put(answerIndex, answerCounts.get(answerIndex) + 1);
         }
     }
-
+    
     public void displayResult() {
         if(question.isMultipleChoice())
             System.out.println("Multiple-choice question: ");
